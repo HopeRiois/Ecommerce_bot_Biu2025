@@ -12,6 +12,8 @@ It leverages built-in tools ([web search](https://platform.openai.com/docs/guide
 #Commit Chatbot setup
 Se toma el código inicial para responses api de openAi, se elimina el archivo .env de ejemplo y se crean dos archivos para manejar las variables de producción como de desarrollo. Se agrega un nuevo método para la obtención de productos de la plataforma ecommerce. Adicionalmente, se cambia el mensaje de presentación del bot, el idioma de guia del input de entrada y se oculta el toolpanel. 
 
+#Commit Images added
+Se agregan las imagenes que tambien pertenecen al proyecto frontend de la plataforma ecommerce para que puedan ser utilizadas por el bot y sean mostradas al cliente para brindar una mejor experiencia.
 
 -----
 
