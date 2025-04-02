@@ -8,7 +8,12 @@ on:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
-
+env:
+  API_PRODUCT: ${{ secrets.API_PRODUCT }}
+  API_URL: ${{ secrets.API_URL }}
+  NEXT_PUBLIC_CHATBOT_DOMAIN: ${{ secrets.NEXT_PUBLIC_CHATBOT_DOMAIN }}
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
